@@ -18,7 +18,7 @@ import java.io.IOException;
         static class MyHandler implements HttpHandler {
             @Override
             public void handle(HttpExchange t) throws IOException {
-                String response = "This is the changed response at 17:08.";
+                String response = "This is the changed response at 19:12.";
                 t.sendResponseHeaders(200, response.length());
                 OutputStream os = t.getResponseBody();
                 os.write(response.getBytes());
